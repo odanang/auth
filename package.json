@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development itoa dev",
     "build": "cross-env NODE_ENV=production itoa build",
-    "start": "cross-env PORT=3040 NODE_ENV=production itoa start"
+    "start:auth": "cross-env PORT=3040 NODE_ENV=production GROUP=auth itoa start",
+    "start:post": "cross-env PORT=3040 NODE_ENV=production GROUP=post itoa start",
+    "start:interactive": "cross-env PORT=3040 NODE_ENV=production GROUP=interactive itoa start"
   },
   "directories": {
     "lib": "lib"
